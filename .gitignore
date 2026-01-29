@@ -1,0 +1,17 @@
+# Extensiones de editores y sistema
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Archivos temporales de oficina o diseño
+*.tmp
+*.bak
+*.swp
+
+# Si llegas a usar node o librerías externas en el futuro
+node_modules/
+dist/
+build/
+
+# Logs de errores
+*.log
