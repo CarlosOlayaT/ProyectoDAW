@@ -1,4 +1,4 @@
-# 🐾 Proyecto Vida Animal - Dashboard Admin
+# 🐾 Proyecto Vida Animal - Sistema de Gestion Veterinaria
 
 Este es el proyecto para la materia de **Desarrollo de Aplicaciones Web (DAW)**. El objetivo es gestionar una veterinaria utilizando una arquitectura organizada y escalable.
 
