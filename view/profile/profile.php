@@ -16,7 +16,7 @@
             <button class="btn-x">&times;</button>
         </div>
         <div class="profile-section">
-            <img src="https://static.wikia.nocookie.net/deathnote/images/d/dd/L_-_Anime.png/revision/latest?cb=20190315084358&path-prefix=es"
+            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxN3wwfDF8c2VhcmNofDN8fHBlcnNvbnxlbnwwfHx8fDE3Njk5NzIwMzR8MA&ixlib=rb-4.1.0&q=85&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450"
                 alt="Admin" class="avatar-main">
             <h3>Hola <?php echo $user ?></h3>
         </div>
