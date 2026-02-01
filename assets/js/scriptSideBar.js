@@ -1,3 +1,5 @@
+// autor: Cadena Herrera Samuel
+
 /**
  * Función para manejar la selección del menú
  */
