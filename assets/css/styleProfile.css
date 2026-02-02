@@ -24,7 +24,13 @@ body {
     font-weight: bold; 
     margin-bottom: 20px; 
 }
-
+a{
+    text-decoration: none;
+    color:inherit;
+}
+a:hover{
+    text-decoration: none;
+}
 .btn-x { 
     position: absolute; 
     right: 0; 
