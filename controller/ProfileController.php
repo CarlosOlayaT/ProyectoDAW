@@ -9,9 +9,11 @@ class ProfileController
 
         // datos del usuario (desde sesión)
         $rol = $_SESSION['rol'];
-        $user = $_SESSION['usuario'];
+        $nombres = $_SESSION['nombres'];
+        $apellidos = $_SESSION['apellidos'];
+
 
         // vista del cuerpo
-        require_once 'view/profile/profile.php';
+        require_once 'view/ProfileView.php';
     }
 }

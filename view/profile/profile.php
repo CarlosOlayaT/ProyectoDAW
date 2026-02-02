@@ -13,12 +13,14 @@
     <div class="card-sidebar">
         <div class="header-sidebar">
             <span><?php echo $rol ?></span>
-            <button class="btn-x">&times;</button>
+            <a href="index.php">
+                <button class="btn-x" onclick="window.location.href='index.php'">&times;</button>
+            </a>
         </div>
         <div class="profile-section">
-            <img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3MjAxN3wwfDF8c2VhcmNofDN8fHBlcnNvbnxlbnwwfHx8fDE3Njk5NzIwMzR8MA&ixlib=rb-4.1.0&q=85&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450"
-                alt="Admin" class="avatar-main">
-            <h3>Hola <?php echo $user ?></h3>
+            <img src="https://i.pinimg.com/736x/7f/0d/23/7f0d2318b0a84e056b167b17fc8d08e2.jpg" alt="Admin"
+                class="avatar-main">
+            <h3>Hola <?php echo $nombres . ' ' . $apellidos ?></h3>
         </div>
         <div class="menu-container">
             <p class="menu-label">Perfiles:</p>
@@ -57,7 +59,7 @@
                 <div class="photo-group">
                     <p class="section-title">Foto de Perfil</p>
                     <div class="img-container">
-                        <img src="https://static.wikia.nocookie.net/deathnote/images/d/dd/L_-_Anime.png/revision/latest?cb=20190315084358&path-prefix=es"
+                        <img src="https://manga-jam.com/wp-content/uploads/part20/how_draw_l_death_note_11.jpg"
                             class="img-perfil">
                         <div class="camera-icon-circle">
                             <i class="fa-solid fa-camera"></i>
@@ -68,11 +70,11 @@
                 <div class="inputs-group">
                     <div class="field">
                         <label>Nombre</label>
-                        <input type="text" value=<?php echo $user ?>>
+                        <input type="text" value=<?php echo $nombres ?>>
                     </div>
                     <div class="field">
                         <label>Apellido</label>
-                        <input type="text" value=<?php echo $user ?>>
+                        <input type="text" value=<?php echo $apellidos ?>>
                     </div>
                 </div>
             </form>

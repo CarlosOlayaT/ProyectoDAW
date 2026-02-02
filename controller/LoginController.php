@@ -1,5 +1,6 @@
 <?php
-require_once 'model/Usuario.php';
+require_once 'model/DTO/Usuario.php';
+require_once 'model/DAO/UsuarioDAO.php';
 
 class LoginController
 {
@@ -13,22 +14,31 @@ class LoginController
     {
         session_start();
 
-        $usuario = $_POST['usuario'];
-        $password = $_POST['password'];
+        $usuario = trim(strip_tags($_POST['usuario'] ?? ''));
+        $password = trim(strip_tags($_POST['password'] ?? ''));
 
-        $model = new Usuario();
-        $user = $model->login($usuario, $password);
-
-        if ($user) {
-            $_SESSION['usuario'] = $user['NombreCompleto'];
-            $_SESSION['rol'] = $user['rol'];
-
-
-
-            header("Location: index.php");
-        } else {
-            echo "Usuario o contraseña incorrectos";
+        if ($usuario === '' || $password === '') {
+            $error = "Campos obligatorios";
+            require 'view/loginView.php';
+            return;
         }
+
+        $dao = new UsuarioDAO();
+        $user = $dao->login($usuario, $password);
+
+        if (!$user) {
+            $error = "Credenciales incorrectas";
+            require 'view/loginView.php';
+            return;
+        }
+
+        $_SESSION['nombres'] = $user->getNombre();
+        $_SESSION['apellidos'] = $user->getApellido();
+        $_SESSION['rol'] = $user->getRolNombre();
+        $_SESSION['rol_id'] = $user->getRolId();
+
+        header("Location: index.php");
+        exit;
     }
 
     public function logout()

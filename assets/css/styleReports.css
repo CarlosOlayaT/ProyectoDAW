@@ -1,0 +1,210 @@
+/* ===== CONTENIDO GENERAL ===== */
+
+.main-content {
+  padding: 15px;
+  background-color: #eef2f5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 25px; 
+}
+
+/* ===== TITULO ===== */
+.page-title {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20   px 30px;
+  
+}
+
+.page-title h1 {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ===== CARD ===== */
+.card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px 25px 25px;
+  
+  max-width: none; 
+}
+
+/* ===== CARD HEADER ===== */
+.card-header {
+  margin-bottom: 10px;
+}
+
+.card-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* ===== TABLA ===== */
+.table-reportes {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+
+/* ===== HEADER TABLA ===== */
+.table-reportes thead th {
+  font-size: 13px;
+  font-weight: 700;
+  color: #334155;
+  text-align: left;
+  padding: 8px 12px;
+}
+
+/* ===== FILAS ===== */
+.table-reportes tbody tr {
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+}
+
+/* ===== CELDAS ===== */
+.table-reportes td {
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0f172a;
+  vertical-align: middle;
+}
+
+/* ===== REDONDEO FILAS ===== */
+.table-reportes tbody tr td:first-child {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.table-reportes tbody tr td:last-child {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* ===== AVATAR MASCOTA ===== */
+.mascota-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ===== BADGES ===== */
+.badge {
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* Facturas */
+.badge-pagado {
+  background: #d9f99d;
+  color: #22c55e;
+}
+
+.badge-esperando {
+  background: #cffafe;
+  color: #0284c7;
+}
+
+/* Citas */
+.badge-completado {
+  background: #d9f99d;
+  color: #22c55e;
+}
+
+.badge-pendiente {
+  background: #cffafe;
+  color: #0284c7;
+}
+
+.badge-noasistio {
+  background: #fecaca;
+  color: #dc2626;
+}
+
+/* ===== ICONO ELIMINAR ===== */
+.btn-delete {
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-delete:hover {
+  transform: scale(1.1);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1000px) {
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+.fa,
+.fa-trash {
+  color: red;
+  font-size: 24px;
+}
+
+.table-reportes {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  table-layout: fixed; /* importante */
+}
+
+/* CENTRAR HEADERS */
+.table-reportes thead th {
+  text-align: center;
+  vertical-align: middle;
+}
+.col-id {
+  width: 8%;
+}
+/* CENTRAR CONTENIDO */
+.table-reportes tbody td {
+  text-align: center;
+  vertical-align: middle;
+}
+/* ===== ESTADO BASE ===== */
+.estado {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 90px;
+  border: 1.5px solid transparent;
+}
+
+/* ===== ESTADOS ===== */
+
+/* VERDE */
+.estado-ok {
+  background-color: #e5ff9c;
+  color: #20c062;
+}
+
+/* NARANJA */
+.estado-pendiente {
+  background-color: #b3edfb;
+  color: #00a7e1;
+}
+
+/* ROJO */
+.estado-error {
+  background-color: #ffb5b6;
+  color: #e10004;
+}
