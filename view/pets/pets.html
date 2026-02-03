@@ -1,0 +1,177 @@
+<!-- autor: Cadena Herrera Samuel -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cadena Herrera Samuel Isaac">
+    <title>Mascotas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/stylePets.css">
+</head>
+<body>
+
+    <div class="main-content">
+        <div class="top-bar">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Buscar...">
+            </div>
+            
+            <h1>Mascotas</h1>
+            
+            <button class="btn-new">
+                <i class="fa-solid fa-plus"></i> Nueva Mascota
+            </button>
+        </div>
+
+        <div class="card">
+            <table class="table-pets">
+                <thead>
+                    <tr>
+                        <th class="col-id">ID</th>
+                        <th class="col-mascota">Mascota</th>
+                        <th>Nombre</th>
+                        <th>Especie</th>
+                        <th>Raza</th>
+                        <th>Sexo</th>
+                        <th>Peso</th>
+                        <th>Edad</th>
+                        <th>Dueño</th>
+                        <th class="text-center">Ficha</th>
+                        <th class="text-center">Historial</th>
+                        <th class="text-center"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M01</td>
+                        <td><img src="../../assets/images/Ellipse 21.png" class="mascota-avatar" alt="Perro"></td>
+                        <td>Coco</td>
+                        <td>Canidae</td>
+                        <td>Beagle</td>
+                        <td>Masculino</td>
+                        <td>5kg</td>
+                        <td>5</td>
+                        <td>Pedro Navas</td>
+                        <td class="text-center"><i class="fa-solid fa-eye action-icon"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-clipboard-list action-icon"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-trash btn-delete"></i></td>
+                    </tr>
+                    <tr>
+                        <td>M02</td>
+                        <td><img src="../../assets/images/Ellipse 22.png" class="mascota-avatar" alt="Gato"></td>
+                        <td>Coco</td>
+                        <td>Canidae</td>
+                        <td>Beagle</td>
+                        <td>Femenino</td>
+                        <td>2kg</td>
+                        <td>2</td>
+                        <td>Pedro Navas</td>
+                        <td class="text-center"><i class="fa-solid fa-eye action-icon"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-clipboard-list action-icon"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-trash btn-delete"></i></td>
+                    </tr>
+                    <tr>
+                        <td>M03</td>
+                        <td><img src="../../assets/images/Ellipse 23.png" class="mascota-avatar" alt="Loro"></td>
+                        <td>Coco</td>
+                        <td>Canidae</td>
+                        <td>Beagle</td>
+                        <td>Masculino</td>
+                        <td>1kg</td>
+                        <td>1</td>
+                        <td>Pedro Navas</td>
+                        <td class="text-center"><i class="fa-solid fa-eye action-icon"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-clipboard-list action-icon"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-trash btn-delete"></i></td>
+                    </tr>
+                    <tr>
+                        <td>M04</td>
+                        <td><img src="../../assets/images/Ellipse 24.png" class="mascota-avatar" alt="Tortuga"></td>
+                        <td>Coco</td>
+                        <td>Canidae</td>
+                        <td>Beagle</td>
+                        <td>Masculino</td>
+                        <td>3kg</td>
+                        <td>3</td>
+                        <td>Pedro Navas</td>
+                        <td class="text-center"><i class="fa-solid fa-eye action-icon"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-clipboard-list action-icon"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-trash btn-delete"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3>Ultimas Citas</h3>
+            </div>
+
+            <table class="table-pets">
+                <thead>
+                    <tr>
+                        <th class="col-id">ID</th>
+                        <th class="col-mascota">Mascota</th>
+                        <th>Nombre</th>
+                        <th>Tipo de Cita</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Detalle de la cita</th>
+                        <th class="text-center">Estado</th>
+                        <th class="text-center"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C01</td>
+                        <td><img src="../../assets/images/Ellipse 21.png" class="mascota-avatar" alt="Perro"></td>
+                        <td>Coco</td>
+                        <td>Cirugia</td>
+                        <td>25/07/2025</td>
+                        <td>15:30 pm</td>
+                        <td class="text-muted">"Neque porro quisquam est qui ipsum"</td>
+                        <td class="text-center"><span class="badge badge-completado">Completado</span></td>
+                        <td class="text-center"><i class="fa-solid fa-pencil action-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <td>C02</td>
+                        <td><img src="../../assets/images/Ellipse 22.png" class="mascota-avatar" alt="Gato"></td>
+                        <td>Coco</td>
+                        <td>Consulta</td>
+                        <td>25/07/2025</td>
+                        <td>15:30 pm</td>
+                        <td class="text-muted">"Neque porro quisquam est qui ipsum"</td>
+                        <td class="text-center"><span class="badge badge-completado">Completado</span></td>
+                        <td class="text-center"><i class="fa-solid fa-pencil action-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <td>C03</td>
+                        <td><img src="../../assets/images/Ellipse 23.png" class="mascota-avatar" alt="Loro"></td>
+                        <td>Coco</td>
+                        <td>Vacunas</td>
+                        <td>25/07/2025</td>
+                        <td>15:30 pm</td>
+                        <td class="text-muted">"Neque porro quisquam est qui ipsum"</td>
+                        <td class="text-center"><span class="badge badge-pendiente">Pendiente</span></td>
+                        <td class="text-center"><i class="fa-solid fa-pencil action-icon"></i></td>
+                    </tr>
+                    <tr>
+                        <td>C04</td>
+                        <td><img src="../../assets/images/Ellipse 24.png" class="mascota-avatar" alt="Tortuga"></td>
+                        <td>Coco</td>
+                        <td>Cirugia</td>
+                        <td>25/07/2025</td>
+                        <td>15:30 pm</td>
+                        <td class="text-muted">"Neque porro quisquam est qui ipsum"</td>
+                        <td class="text-center"><span class="badge badge-noasistio">No Asistio</span></td>
+                        <td class="text-center"><i class="fa-solid fa-pencil action-icon"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
