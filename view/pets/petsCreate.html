@@ -1,0 +1,102 @@
+<!-- autor: Cadena Herrera Samuel -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cadena Herrera Samuel Isaac">
+    <title>Crear Mascota</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/stylePetsCreate.css">
+</head>
+<body>
+
+    <div class="modal-card">
+        
+        <div class="modal-header">
+            <h2>Crear Mascota</h2>
+            
+        </div>
+
+        <hr class="divider">
+
+        <form action="#">
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Escoja la Mascota</label>
+                    <div class="select-wrapper">
+                        <select>
+                            <option value="">Escoje un animal</option>
+                            <option value="1">Perro</option>
+                            <option value="2">Gato</option>
+                        </select>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Coco">
+                </div>
+
+                <div class="form-group">
+                    <label>Especie</label>
+                    <input type="text" placeholder="Coco">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Raza</label>
+                    <input type="text" placeholder="Perro">
+                </div>
+                <div class="form-group">
+                    <label>Edad</label>
+                    <input type="text" placeholder="Coco">
+                </div>
+                <div class="form-group">
+                    <label>Peso</label>
+                    <input type="number" placeholder="0.00 Kg" step="2.00" min="0">
+                </div>
+            </div>
+
+            <div class="form-row split-row">
+                
+                <div class="form-group">
+                    <label>Sexo</label>
+                    <div class="checkbox-row">
+                        <label class="custom-check">
+                            <input type="checkbox"> Macho
+                        </label>
+                        <label class="custom-check">
+                            <input type="checkbox"> Hembra
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Dueño</label>
+                    <div class="select-wrapper">
+                        <select>
+                            <option value="">Escoje a su dueño</option>
+                            <option value="1">Samuel</option>
+                            <option value="2">Otro...</option>
+                        </select>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-cancel">Cancelar</button>
+                <button type="submit" class="btn btn-save">Guardar</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
