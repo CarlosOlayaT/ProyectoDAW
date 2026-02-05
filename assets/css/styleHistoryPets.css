@@ -15,7 +15,7 @@
 
         body {
             font-family: "Poppins", sans-serif;
-            background-color: var(--color-bg-light);
+            background-color: var(--color-white);
             display: flex;
             justify-content: center;
             padding: 40px;
@@ -40,7 +40,7 @@
         .profile-section { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
         .profile-info { display: flex; align-items: center; gap: 20px; }
         .avatar-circle {
-            width: 80px; height: 80px; border-radius: 50%; border: 3px solid var(--color-white);
+            width: 80px; height: 80px; border-radius: 50%; border: 3px solid var(--color-gold);
             box-shadow: 0 2px 5px rgba(0,0,0,0.1); background-color: var(--color-gold); overflow: hidden;
             display: flex; justify-content: center; align-items: center;
         }
