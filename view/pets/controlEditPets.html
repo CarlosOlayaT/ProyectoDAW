@@ -7,82 +7,86 @@
     <meta name="author" content="Cadena Herrera Samuel Isaac">
     <title>Editar Control/Vacunas </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../../assets/css/styleControlEditsPets.css">
+    <link rel="stylesheet" href="../../assets/css/styleControlEditPets.css">
 </head>
 <body>
 
-    <div class="main-container">
+    <main class="main-container">
         
-        <h1>Editar Control/Vacunas</h1>
+        <form action="#" method="POST" style="display: contents;">
 
-        <div class="header-section">
-            <div class="profile-info">
-                <div class="avatar-circle">
-                    <img src="../../assets/images/Ellipse 21.png" alt="Harry">
+            <h1>Editar Control/Vacunas</h1>
+
+            <header class="header-section">
+                <div class="profile-info">
+                    <figure class="avatar-circle">
+                        <img src="../../assets/images/Ellipse 21.png" alt="Foto de perfil de Harry">
+                    </figure>
+
+                    <div class="text-data-container">
+                        <div class="name-block">
+                            <h2>Harry <i class="fa-solid fa-mars gender-icon" aria-label="Macho"></i></h2>
+                            <p class="breed-text">Pitbull</p>
+                        </div>
+
+                        <div class="stats-block">
+                            <span class="stat-item">Peso: 5Kg</span>
+                            <span class="stat-item">Edad: 3 años</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="text-data-container">
-                    <div class="name-block">
-                        <h2>Harry <i class="fa-solid fa-mars gender-icon"></i></h2>
-                        <p class="breed-text">Pitbull</p>
-                    </div>
-
-                    <div class="stats-block">
-                        <span class="stat-item">Peso: 5Kg</span>
-                        <span class="stat-item">Edad: 3 años</span>
-                    </div>
+                <div class="action-buttons">
+                    <button type="button" class="btn btn-cancel">Cancelar</button>
+                    <button type="submit" class="btn btn-save">Guardar</button>
                 </div>
-            </div>
+            </header>
 
-            <div class="action-buttons">
-                <button class="btn btn-cancel">Cancelar</button>
-                <button class="btn btn-save">Guardar</button>
-            </div>
-        </div>
-
-        <div class="cards-container">
-            
-            <div class="white-card">
-                <h3>Carta Medica</h3>
+            <div class="cards-container">
                 
-                <div class="row-inline-inputs">
-                    <div class="input-group-compact">
-                        <label>Diagnostico:</label>
-                        <input type="text" class="input-field">
+                <section class="white-card" aria-labelledby="titulo-carta-medica">
+                    <h3 id="titulo-carta-medica">Carta Medica</h3>
+                    
+                    <div class="row-inline-inputs">
+                        <div class="input-group-compact">
+                            <label for="diagnostico">Diagnostico:</label>
+                            <input type="text" id="diagnostico" name="diagnostico" class="input-field">
+                        </div>
+                        <div class="input-group-compact">
+                            <label for="control">Control:</label>
+                            <input type="text" id="control" name="control" class="input-field">
+                        </div>
                     </div>
-                    <div class="input-group-compact">
-                        <label>Control:</label>
-                        <input type="text" class="input-field">
-                    </div>
-                </div>
 
-                <div class="column-input">
-                    <label>Tratamiento:</label>
-                    <textarea class="input-field textarea-large"></textarea>
-                </div>
+                    <div class="column-input">
+                        <label for="tratamiento">Tratamiento:</label>
+                        <textarea id="tratamiento" name="tratamiento" class="input-field textarea-large"></textarea>
+                    </div>
+                </section>
+
+                <section class="white-card" aria-labelledby="titulo-vacunas">
+                    <h3 id="titulo-vacunas">Vacunas</h3>
+                    
+                    <div class="form-grid">
+                        <label for="enfermedad">Enfermedad:</label>
+                        <input type="text" id="enfermedad" name="enfermedad" class="input-field">
+
+                        <label for="tipo_vacuna">Tipo de Vacuna:</label>
+                        <input type="text" id="tipo_vacuna" name="tipo_vacuna" class="input-field">
+
+                        <label for="primera_vacuna">Primera Vacuna:</label>
+                        <input type="date" id="primera_vacuna" name="primera_vacuna" class="input-field">
+
+                        <label for="repetir_vacuna">Repetir Vacuna:</label>
+                        <input type="date" id="repetir_vacuna" name="repetir_vacuna" class="input-field">
+                    </div>
+                </section>
+
             </div>
 
-            <div class="white-card">
-                <h3>Vacunas</h3>
-                
-                <div class="form-grid">
-                    <label>Enfermedad:</label>
-                    <input type="text" class="input-field">
+        </form>
 
-                    <label>Tipo de Vacuna:</label>
-                    <input type="text" class="input-field">
-
-                    <label>Primera Vacuna:</label>
-                    <input type="date" class="input-field">
-
-                    <label>Repetir Vacuna:</label>
-                    <input type="date" class="input-field">
-                </div>
-            </div>
-
-        </div>
-
-    </div>
+    </main>
 
 </body>
 </html>

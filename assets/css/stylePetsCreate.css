@@ -131,7 +131,7 @@
         }
 
         /*  CHECKBOXES  */
-        .checkbox-row {
+        .radios-row {
             display: flex;
             gap: 25px;
             height: 45px;

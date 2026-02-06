@@ -11,92 +11,91 @@
 </head>
 <body>
 
-    <div class="modal-card">
+    <main class="modal-card">
         
-        <div class="modal-header">
+        <header class="modal-header">
             <h2>Crear Mascota</h2>
-            
-        </div>
+        </header>
 
         <hr class="divider">
 
-        <form action="#">
+        <form action="#" method="POST">
             
             <div class="form-row">
                 <div class="form-group">
-                    <label>Escoja la Mascota</label>
+                    <label for="tipo_mascota">Escoja la Mascota</label>
                     <div class="select-wrapper">
-                        <select>
+                        <select id="tipo_mascota" name="tipo_mascota">
                             <option value="">Escoje un animal</option>
                             <option value="1">Perro</option>
                             <option value="2">Gato</option>
                         </select>
-                        <i class="fa fa-chevron-down"></i>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Coco">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Coco">
                 </div>
 
                 <div class="form-group">
-                    <label>Especie</label>
-                    <input type="text" placeholder="Coco">
+                    <label for="especie">Especie</label>
+                    <input type="text" id="especie" name="especie" placeholder="Coco">
                 </div>
             </div>
 
             <div class="form-row">
                 <div class="form-group">
-                    <label>Raza</label>
-                    <input type="text" placeholder="Perro">
+                    <label for="raza">Raza</label>
+                    <input type="text" id="raza" name="raza" placeholder="Perro">
                 </div>
                 <div class="form-group">
-                    <label>Edad</label>
-                    <input type="text" placeholder="Coco">
+                    <label for="edad">Edad</label>
+                    <input type="text" id="edad" name="edad" placeholder="Coco">
                 </div>
                 <div class="form-group">
-                    <label>Peso</label>
-                    <input type="number" placeholder="0.00 Kg" step="2.00" min="0">
+                    <label for="peso">Peso</label>
+                    <input type="number" id="peso" name="peso" placeholder="0.00 Kg" step="2.00" min="0">
                 </div>
             </div>
 
             <div class="form-row split-row">
                 
-                <div class="form-group">
-                    <label>Sexo</label>
-                    <div class="checkbox-row">
+                <div class="form-group" role="group" aria-labelledby="label-sexo">
+                    <label id="label-sexo">Sexo</label>
+                    <div class="radios-row">
                         <label class="custom-check">
-                            <input type="checkbox"> Macho
+                            <input type="radio" name="sexo" value="macho"> Macho
                         </label>
                         <label class="custom-check">
-                            <input type="checkbox"> Hembra
+                            <input type="radio" name="sexo" value="hembra"> Hembra
                         </label>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label>Dueño</label>
+                    <label for="dueno">Dueño</label>
                     <div class="select-wrapper">
-                        <select>
+                        <select id="dueno" name="dueno">
                             <option value="">Escoje a su dueño</option>
                             <option value="1">Samuel</option>
                             <option value="2">Otro...</option>
                         </select>
-                        <i class="fa fa-chevron-down"></i>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
 
             <hr class="divider">
 
-            <div class="modal-footer">
+            <footer class="modal-footer">
                 <button type="button" class="btn btn-cancel">Cancelar</button>
                 <button type="submit" class="btn btn-save">Guardar</button>
-            </div>
+            </footer>
 
         </form>
-    </div>
+    </main>
 
 </body>
 </html>

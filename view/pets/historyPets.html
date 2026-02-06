@@ -11,219 +11,270 @@
 </head>
 <body>
 
-    <div class="main-container">
+    <main class="main-container">
         
-        <h1>Historial Medico</h1>
+        <form action="#" method="POST" style="display: contents;">
 
-        <div class="profile-section">
-            <div class="profile-info">
-                <div class="avatar-circle">
-                    <img src="../../assets/images/Ellipse 21.png" alt="Harry">
-                </div>
-                <div class="profile-details">
-                    <h2>Harry <i class="fa-solid fa-mars gender-icon"></i></h2>
-                    <p>Pitbull</p>
-                </div>
-                <div class="profile-stats">
-                    <span>Peso: 5Kg</span>
-                    <br>
-                    <span>Edad: 3 años</span>
-                </div>
-            </div>
-            <div class="profile-actions">
-                <button class="btn-gold">Agregar Control/Vacunas</button>
-                <button class="btn-gold">Agendar una Cita</button>
-            </div>
-        </div>
+            <h1>Historial Medico</h1>
 
-        <div class="grid-top">
-            
-            <div class="card">
-                <div class="card-header">
-                    <h3>Carta Medica</h3>
-                    <i class="fa-solid fa-pencil icon-edit-header"></i>
-                </div>
-                <table class="simple-table">
-                    <thead>
-                        <tr>
-                            <th width="20%">Diagnostico</th>
-                            <th width="45%">Tratamiento</th>
-                            <th width="25%">Control</th>
-                            <th width="10%"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-strong">Rabia</td>
-                            <td>Lorem ipsum dolor sit amet.</td>
-                            <td>25/07/2025</td>
-                            <td style="text-align: right;"><i class="fa-solid fa-trash icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td class="text-strong">Moquillo</td>
-                            <td>Antibióticos 5 días.</td>
-                            <td>10/08/2025</td>
-                            <td style="text-align: right;"><i class="fa-solid fa-trash icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td class="text-strong">Alergia</td>
-                            <td>Lorem ipsum dolor sit.</td>
-                            <td>15/09/2025</td>
-                            <td style="text-align: right;"><i class="fa-solid fa-trash icon-trash"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="card">
-                <div class="card-header">
-                    <h3>Vacunas</h3>
-                    <i class="fa-solid fa-pencil icon-edit-header"></i>
-                </div>
-                <table class="simple-table">
-                    <thead>
-                        <tr>
-                            <th width="25%">Enfermedad</th>
-                            <th width="25%">Vacuna</th>
-                            <th width="20%">Primera</th>
-                            <th width="20%">Repetir</th>
-                            <th width="10%"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="text-strong">Rabia</td>
-                            <td>Vacuna1</td>
-                            <td>25/07/2025</td>
-                            <td>25/07/2026</td>
-                            <td style="text-align: right;"><i class="fa-solid fa-trash icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td class="text-strong">Parvovirus</td>
-                            <td>Vacuna2</td>
-                            <td>12/03/2025</td>
-                            <td>12/03/2026</td>
-                            <td style="text-align: right;"><i class="fa-solid fa-trash icon-trash"></i></td>
-                        </tr>
-                        <tr>
-                            <td class="text-strong">Moquillo</td>
-                            <td>Vacuna3</td>
-                            <td>25/07/2025</td>
-                            <td>25/07/2026</td>
-                            <td style="text-align: right;"><i class="fa-solid fa-trash icon-trash"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </div>
-
-        <div class="grid-bottom">
-            
-            <div class="card calendar-card-container">
-                <div class="calendar-wrapper">
-                    <div class="calendar-header">
-                        <span class="current-month">Julio 2025</span>
-                        <div class="calendar-nav">
-                            <i class="fa-solid fa-chevron-left"></i>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </div>
+            <section class="profile-section" aria-label="Información de la Mascota">
+                <div class="profile-info">
+                    <figure class="avatar-circle">
+                        <img src="../../assets/images/Ellipse 21.png" alt="Foto de perfil de Harry">
+                    </figure>
+                    <div class="profile-details">
+                        <h2>Harry <i class="fa-solid fa-mars gender-icon" aria-label="Macho"></i></h2>
+                        <p>Pitbull</p>
                     </div>
-
-                    <div class="calendar-grid">
-                        <div class="day-name">Lu</div>
-                        <div class="day-name">Ma</div>
-                        <div class="day-name">Mi</div>
-                        <div class="day-name">Ju</div>
-                        <div class="day-name">Vi</div>
-                        <div class="day-name">Sa</div>
-                        <div class="day-name">Do</div>
-
-                        <div class="day-empty"></div> 
-                        <div class="day-number">1</div>
-                        <div class="day-number">2</div>
-                        <div class="day-number">3</div>
-                        <div class="day-number">4</div>
-                        <div class="day-number">5</div>
-                        <div class="day-number">6</div>
-                        <div class="day-number">7</div>
-                        <div class="day-number">8</div>
-                        <div class="day-number">9</div>
-                        <div class="day-number">10</div>
-                        <div class="day-number">11</div>
-                        <div class="day-number">12</div>
-                        <div class="day-number">13</div>
-                        <div class="day-number">14</div>
-                        <div class="day-number">15</div>
-                        <div class="day-number">16</div>
-                        <div class="day-number">17</div>
-                        <div class="day-number">18</div>
-                        <div class="day-number">19</div>
-                        <div class="day-number">20</div>
-                        <div class="day-number">21</div>
-                        <div class="day-number">22</div>
-                        <div class="day-number">23</div>
-                        <div class="day-number">24</div>
-                        <div class="day-number day-active has-event">25</div>
-                        <div class="day-number">26</div>
-                        <div class="day-number">27</div>
-                        <div class="day-number">28</div>
-                        <div class="day-number">29</div>
-                        <div class="day-number">30</div>
-                        <div class="day-number">31</div>
+                    <div class="profile-stats">
+                        <span>Peso: 5Kg</span>
+                        <br>
+                        <span>Edad: 3 años</span>
                     </div>
                 </div>
+                <div class="profile-actions">
+                    <button type="button" class="btn-gold">Agregar Control/Vacunas</button>
+                    <button type="button" class="btn-gold">Agendar una Cita</button>
+                </div>
+            </section>
+
+            <div class="grid-top">
+                
+                <section class="card" aria-labelledby="titulo-carta-medica">
+                    <header class="card-header">
+                        <h3 id="titulo-carta-medica">Carta Medica</h3>
+                        </header>
+                    <table class="simple-table">
+                        <thead>
+                            <tr>
+                                <th width="20%" scope="col">Diagnostico</th>
+                                <th width="45%" scope="col">Tratamiento</th>
+                                <th width="25%" scope="col">Control</th>
+                                <th width="10%" scope="col" style="text-align: right;">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-strong">Rabia</td>
+                                <td>Lorem ipsum dolor sit amet.</td>
+                                <td>25/07/2025</td>
+                                <td style="text-align: right; white-space: nowrap;">
+                                    <button type="button" style="background:none; border:none; padding:0; margin-right: 8px;">
+                                        <i class="fa-solid fa-pencil icon-edit" aria-label="Editar registro"></i>
+                                    </button>
+                                    <button type="button" style="background:none; border:none; padding:0;">
+                                        <i class="fa-solid fa-trash icon-trash" aria-label="Eliminar registro"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-strong">Moquillo</td>
+                                <td>Antibióticos 5 días.</td>
+                                <td>10/08/2025</td>
+                                <td style="text-align: right; white-space: nowrap;">
+                                    <button type="button" style="background:none; border:none; padding:0; margin-right: 8px;">
+                                        <i class="fa-solid fa-pencil icon-edit" aria-label="Editar registro"></i>
+                                    </button>
+                                    <button type="button" style="background:none; border:none; padding:0;">
+                                        <i class="fa-solid fa-trash icon-trash" aria-label="Eliminar registro"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-strong">Alergia</td>
+                                <td>Lorem ipsum dolor sit.</td>
+                                <td>15/09/2025</td>
+                                <td style="text-align: right; white-space: nowrap;">
+                                    <button type="button" style="background:none; border:none; padding:0; margin-right: 8px;">
+                                        <i class="fa-solid fa-pencil icon-edit" aria-label="Editar registro"></i>
+                                    </button>
+                                    <button type="button" style="background:none; border:none; padding:0;">
+                                        <i class="fa-solid fa-trash icon-trash" aria-label="Eliminar registro"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="card" aria-labelledby="titulo-vacunas">
+                    <header class="card-header">
+                        <h3 id="titulo-vacunas">Vacunas</h3>
+                        </header>
+                    <table class="simple-table">
+                        <thead>
+                            <tr>
+                                <th width="25%" scope="col">Enfermedad</th>
+                                <th width="25%" scope="col">Vacuna</th>
+                                <th width="20%" scope="col">Primera</th>
+                                <th width="20%" scope="col">Repetir</th>
+                                <th width="10%" scope="col" style="text-align: right;">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-strong">Rabia</td>
+                                <td>Vacuna1</td>
+                                <td>25/07/2025</td>
+                                <td>25/07/2026</td>
+                                <td style="text-align: right; white-space: nowrap;">
+                                    <button type="button" style="background:none; border:none; padding:0; margin-right: 8px;">
+                                        <i class="fa-solid fa-pencil icon-edit" aria-label="Editar vacuna"></i>
+                                    </button>
+                                    <button type="button" style="background:none; border:none; padding:0;">
+                                        <i class="fa-solid fa-trash icon-trash" aria-label="Eliminar vacuna"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-strong">Parvovirus</td>
+                                <td>Vacuna2</td>
+                                <td>12/03/2025</td>
+                                <td>12/03/2026</td>
+                                <td style="text-align: right; white-space: nowrap;">
+                                    <button type="button" style="background:none; border:none; padding:0; margin-right: 8px;">
+                                        <i class="fa-solid fa-pencil icon-edit" aria-label="Editar vacuna"></i>
+                                    </button>
+                                    <button type="button" style="background:none; border:none; padding:0;">
+                                        <i class="fa-solid fa-trash icon-trash" aria-label="Eliminar vacuna"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-strong">Moquillo</td>
+                                <td>Vacuna3</td>
+                                <td>25/07/2025</td>
+                                <td>25/07/2026</td>
+                                <td style="text-align: right; white-space: nowrap;">
+                                    <button type="button" style="background:none; border:none; padding:0; margin-right: 8px;">
+                                        <i class="fa-solid fa-pencil icon-edit" aria-label="Editar vacuna"></i>
+                                    </button>
+                                    <button type="button" style="background:none; border:none; padding:0;">
+                                        <i class="fa-solid fa-trash icon-trash" aria-label="Eliminar vacuna"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
             </div>
 
-            <div class="card">
-                <div class="card-header">
-                    <h3>Citas Programadas</h3>
-                </div>
-                <div class="citas-list">
-                    <div class="cita-item">
-                        <div class="cita-info">
-                            <h4>25 Julio 2025, 18:30</h4>
-                            <p>Consulta general y revisión de puntos.</p>
-                        </div>
-                        <div class="cita-actions">
-                            <i class="fa-solid fa-pencil icon-edit"></i>
-                            <i class="fa-solid fa-trash icon-trash"></i>
-                        </div>
-                    </div>
-                    <div class="cita-item">
-                        <div class="cita-info">
-                            <h4>30 Agosto 2025, 10:00</h4>
-                            <p>Vacunación anual (Refuerzo).</p>
-                        </div>
-                        <div class="cita-actions">
-                            <i class="fa-solid fa-pencil icon-edit"></i>
-                            <i class="fa-solid fa-trash icon-trash"></i>
-                        </div>
-                    </div>
-                    <div class="cita-item">
-                        <div class="cita-info">
-                            <h4>15 Sept 2025, 15:45</h4>
-                            <p>Baño medicado y corte de uñas.</p>
-                        </div>
-                        <div class="cita-actions">
-                            <i class="fa-solid fa-pencil icon-edit"></i>
-                            <i class="fa-solid fa-trash icon-trash"></i>
-                        </div>
-                    </div>
-                    <div class="cita-item">
-                        <div class="cita-info">
-                            <h4>20 Oct 2025, 09:00</h4>
-                            <p>Control de peso.</p>
-                        </div>
-                        <div class="cita-actions">
-                            <i class="fa-solid fa-pencil icon-edit"></i>
-                            <i class="fa-solid fa-trash icon-trash"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="grid-bottom">
+                
+                <section class="card calendar-card-container" aria-label="Calendario de Citas">
+                    <div class="calendar-wrapper">
+                        <header class="calendar-header">
+                            <span class="current-month">Julio 2025</span>
+                            <div class="calendar-nav">
+                                <i class="fa-solid fa-chevron-left" role="button" aria-label="Mes anterior" tabindex="0"></i>
+                                <i class="fa-solid fa-chevron-right" role="button" aria-label="Mes siguiente" tabindex="0"></i>
+                            </div>
+                        </header>
 
-        </div> </div>
+                        <div class="calendar-grid">
+                            <div class="day-name" title="Lunes">Lu</div>
+                            <div class="day-name" title="Martes">Ma</div>
+                            <div class="day-name" title="Miércoles">Mi</div>
+                            <div class="day-name" title="Jueves">Ju</div>
+                            <div class="day-name" title="Viernes">Vi</div>
+                            <div class="day-name" title="Sábado">Sa</div>
+                            <div class="day-name" title="Domingo">Do</div>
+
+                            <div class="day-empty" aria-hidden="true"></div> 
+                            <div class="day-number">1</div>
+                            <div class="day-number">2</div>
+                            <div class="day-number">3</div>
+                            <div class="day-number">4</div>
+                            <div class="day-number">5</div>
+                            <div class="day-number">6</div>
+                            <div class="day-number">7</div>
+                            <div class="day-number">8</div>
+                            <div class="day-number">9</div>
+                            <div class="day-number">10</div>
+                            <div class="day-number">11</div>
+                            <div class="day-number">12</div>
+                            <div class="day-number">13</div>
+                            <div class="day-number">14</div>
+                            <div class="day-number">15</div>
+                            <div class="day-number">16</div>
+                            <div class="day-number">17</div>
+                            <div class="day-number">18</div>
+                            <div class="day-number">19</div>
+                            <div class="day-number">20</div>
+                            <div class="day-number">21</div>
+                            <div class="day-number">22</div>
+                            <div class="day-number">23</div>
+                            <div class="day-number">24</div>
+                            <div class="day-number day-active has-event" aria-label="25 de Julio, tiene citas">25</div>
+                            <div class="day-number">26</div>
+                            <div class="day-number">27</div>
+                            <div class="day-number">28</div>
+                            <div class="day-number">29</div>
+                            <div class="day-number">30</div>
+                            <div class="day-number">31</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card" aria-labelledby="titulo-citas-programadas">
+                    <header class="card-header">
+                        <h3 id="titulo-citas-programadas">Citas Programadas</h3>
+                    </header>
+                    <div class="citas-list">
+                        
+                        <article class="cita-item">
+                            <div class="cita-info">
+                                <h4>25 Julio 2025, 18:30</h4>
+                                <p>Consulta general y revisión de puntos.</p>
+                            </div>
+                            <div class="cita-actions">
+                                <i class="fa-solid fa-pencil icon-edit" role="button" aria-label="Editar cita" tabindex="0"></i>
+                                <i class="fa-solid fa-trash icon-trash" role="button" aria-label="Eliminar cita" tabindex="0"></i>
+                            </div>
+                        </article>
+
+                        <article class="cita-item">
+                            <div class="cita-info">
+                                <h4>30 Agosto 2025, 10:00</h4>
+                                <p>Vacunación anual (Refuerzo).</p>
+                            </div>
+                            <div class="cita-actions">
+                                <i class="fa-solid fa-pencil icon-edit" role="button" aria-label="Editar cita" tabindex="0"></i>
+                                <i class="fa-solid fa-trash icon-trash" role="button" aria-label="Eliminar cita" tabindex="0"></i>
+                            </div>
+                        </article>
+
+                        <article class="cita-item">
+                            <div class="cita-info">
+                                <h4>15 Sept 2025, 15:45</h4>
+                                <p>Baño medicado y corte de uñas.</p>
+                            </div>
+                            <div class="cita-actions">
+                                <i class="fa-solid fa-pencil icon-edit" role="button" aria-label="Editar cita" tabindex="0"></i>
+                                <i class="fa-solid fa-trash icon-trash" role="button" aria-label="Eliminar cita" tabindex="0"></i>
+                            </div>
+                        </article>
+
+                        <article class="cita-item">
+                            <div class="cita-info">
+                                <h4>20 Oct 2025, 09:00</h4>
+                                <p>Control de peso.</p>
+                            </div>
+                            <div class="cita-actions">
+                                <i class="fa-solid fa-pencil icon-edit" role="button" aria-label="Editar cita" tabindex="0"></i>
+                                <i class="fa-solid fa-trash icon-trash" role="button" aria-label="Eliminar cita" tabindex="0"></i>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+            </div> 
+        
+        </form>
+
+    </main>
 
 </body>
 </html>

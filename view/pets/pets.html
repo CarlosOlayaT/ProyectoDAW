@@ -11,42 +11,45 @@
 </head>
 <body>
 
-    <div class="main-content">
-        <div class="top-bar">
+    <main class="main-content">
+        
+        <form action="#" method="POST" style="display: contents;">
+        <header class="top-bar">
             <div class="search-box">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                <label for="search-input" style="display:none;">Buscar</label>
+                <input type="text" id="search-input" placeholder="Buscar...">
             </div>
             
             <h1>Mascotas</h1>
             
-            <button class="btn-new">
-                <i class="fa-solid fa-plus"></i> Nueva Mascota
+            <button class="btn-new" type="button">
+                <i class="fa-solid fa-plus" aria-hidden="true"></i> Nueva Mascota
             </button>
-        </div>
+        </header>
 
-        <div class="card">
+        <section class="card" aria-label="Listado de Mascotas">
             <table class="table-pets">
                 <thead>
                     <tr>
-                        <th class="col-id">ID</th>
-                        <th class="col-mascota">Mascota</th>
-                        <th>Nombre</th>
-                        <th>Especie</th>
-                        <th>Raza</th>
-                        <th>Sexo</th>
-                        <th>Peso</th>
-                        <th>Edad</th>
-                        <th>Dueño</th>
-                        <th class="text-center">Ficha</th>
-                        <th class="text-center">Historial</th>
-                        <th class="text-center"></th>
+                        <th class="col-id" scope="col">ID</th>
+                        <th class="col-mascota" scope="col">Mascota</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Especie</th>
+                        <th scope="col">Raza</th>
+                        <th scope="col">Sexo</th>
+                        <th scope="col">Peso</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Dueño</th>
+                        <th class="text-center" scope="col">Ficha</th>
+                        <th class="text-center" scope="col">Historial</th>
+                        <th class="text-center" scope="col"><span style="display:none;">Eliminar</span></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>M01</td>
-                        <td><img src="../../assets/images/Ellipse 21.png" class="mascota-avatar" alt="Perro"></td>
+                        <td><img src="../../assets/images/Ellipse 21.png" class="mascota-avatar" alt="Foto de Perro"></td>
                         <td>Coco</td>
                         <td>Canidae</td>
                         <td>Beagle</td>
@@ -54,73 +57,32 @@
                         <td>5kg</td>
                         <td>5</td>
                         <td>Pedro Navas</td>
-                        <td class="text-center"><i class="fa-solid fa-eye action-icon"></i></td>
-                        <td class="text-center"><i class="fa-solid fa-clipboard-list action-icon"></i></td>
-                        <td class="text-center"><i class="fa-solid fa-trash btn-delete"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-eye action-icon" aria-label="Ver Ficha"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-clipboard-list action-icon" aria-label="Ver Historial"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-trash btn-delete" aria-label="Eliminar Mascota"></i></td>
                     </tr>
-                    <tr>
-                        <td>M02</td>
-                        <td><img src="../../assets/images/Ellipse 22.png" class="mascota-avatar" alt="Gato"></td>
-                        <td>Coco</td>
-                        <td>Canidae</td>
-                        <td>Beagle</td>
-                        <td>Femenino</td>
-                        <td>2kg</td>
-                        <td>2</td>
-                        <td>Pedro Navas</td>
-                        <td class="text-center"><i class="fa-solid fa-eye action-icon"></i></td>
-                        <td class="text-center"><i class="fa-solid fa-clipboard-list action-icon"></i></td>
-                        <td class="text-center"><i class="fa-solid fa-trash btn-delete"></i></td>
-                    </tr>
-                    <tr>
-                        <td>M03</td>
-                        <td><img src="../../assets/images/Ellipse 23.png" class="mascota-avatar" alt="Loro"></td>
-                        <td>Coco</td>
-                        <td>Canidae</td>
-                        <td>Beagle</td>
-                        <td>Masculino</td>
-                        <td>1kg</td>
-                        <td>1</td>
-                        <td>Pedro Navas</td>
-                        <td class="text-center"><i class="fa-solid fa-eye action-icon"></i></td>
-                        <td class="text-center"><i class="fa-solid fa-clipboard-list action-icon"></i></td>
-                        <td class="text-center"><i class="fa-solid fa-trash btn-delete"></i></td>
-                    </tr>
-                    <tr>
-                        <td>M04</td>
-                        <td><img src="../../assets/images/Ellipse 24.png" class="mascota-avatar" alt="Tortuga"></td>
-                        <td>Coco</td>
-                        <td>Canidae</td>
-                        <td>Beagle</td>
-                        <td>Masculino</td>
-                        <td>3kg</td>
-                        <td>3</td>
-                        <td>Pedro Navas</td>
-                        <td class="text-center"><i class="fa-solid fa-eye action-icon"></i></td>
-                        <td class="text-center"><i class="fa-solid fa-clipboard-list action-icon"></i></td>
-                        <td class="text-center"><i class="fa-solid fa-trash btn-delete"></i></td>
-                    </tr>
+                    
                 </tbody>
             </table>
-        </div>
+        </section>
 
-        <div class="card">
-            <div class="card-header">
-                <h3>Ultimas Citas</h3>
-            </div>
+        <section class="card" aria-labelledby="titulo-citas">
+            <header class="card-header">
+                <h3 id="titulo-citas">Ultimas Citas</h3>
+            </header>
 
             <table class="table-pets">
                 <thead>
                     <tr>
-                        <th class="col-id">ID</th>
-                        <th class="col-mascota">Mascota</th>
-                        <th>Nombre</th>
-                        <th>Tipo de Cita</th>
-                        <th>Fecha</th>
-                        <th>Hora</th>
-                        <th>Detalle de la cita</th>
-                        <th class="text-center">Estado</th>
-                        <th class="text-center"></th>
+                        <th class="col-id" scope="col">ID</th>
+                        <th class="col-mascota" scope="col">Mascota</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Tipo de Cita</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Hora</th>
+                        <th scope="col">Detalle de la cita</th>
+                        <th class="text-center" scope="col">Estado</th>
+                        <th class="text-center" scope="col"><span style="display:none;">Editar</span></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -133,18 +95,7 @@
                         <td>15:30 pm</td>
                         <td class="text-muted">"Neque porro quisquam est qui ipsum"</td>
                         <td class="text-center"><span class="badge badge-completado">Completado</span></td>
-                        <td class="text-center"><i class="fa-solid fa-pencil action-icon"></i></td>
-                    </tr>
-                    <tr>
-                        <td>C02</td>
-                        <td><img src="../../assets/images/Ellipse 22.png" class="mascota-avatar" alt="Gato"></td>
-                        <td>Coco</td>
-                        <td>Consulta</td>
-                        <td>25/07/2025</td>
-                        <td>15:30 pm</td>
-                        <td class="text-muted">"Neque porro quisquam est qui ipsum"</td>
-                        <td class="text-center"><span class="badge badge-completado">Completado</span></td>
-                        <td class="text-center"><i class="fa-solid fa-pencil action-icon"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-pencil action-icon" aria-label="Editar Cita"></i></td>
                     </tr>
                     <tr>
                         <td>C03</td>
@@ -155,7 +106,7 @@
                         <td>15:30 pm</td>
                         <td class="text-muted">"Neque porro quisquam est qui ipsum"</td>
                         <td class="text-center"><span class="badge badge-pendiente">Pendiente</span></td>
-                        <td class="text-center"><i class="fa-solid fa-pencil action-icon"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-pencil action-icon" aria-label="Editar Cita"></i></td>
                     </tr>
                     <tr>
                         <td>C04</td>
@@ -166,12 +117,13 @@
                         <td>15:30 pm</td>
                         <td class="text-muted">"Neque porro quisquam est qui ipsum"</td>
                         <td class="text-center"><span class="badge badge-noasistio">No Asistio</span></td>
-                        <td class="text-center"><i class="fa-solid fa-pencil action-icon"></i></td>
+                        <td class="text-center"><i class="fa-solid fa-pencil action-icon" aria-label="Editar Cita"></i></td>
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </div>
+        </section>
+        </form>
+    </main>
 
 </body>
 </html>
