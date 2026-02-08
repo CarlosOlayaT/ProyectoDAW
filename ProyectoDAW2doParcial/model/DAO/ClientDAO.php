@@ -176,7 +176,7 @@ class ClientDAO
     {
         try {
             $sql = "INSERT INTO clientes 
-                (Nombre, Apellido, Cedula, Telefono, Direccion, Correo)
+                (Nombre, Apellido, Correo, Cedula, Telefono, Direccion)
                 VALUES (?, ?, ?, ?, ?, ?)";
 
             $stmt = $this->conexion->prepare($sql);
@@ -237,4 +237,5 @@ class ClientDAO
             throw new Exception("Error DeleteClient: " . $e->getMessage());
         }
     }
+
 }
