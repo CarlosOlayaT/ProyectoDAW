@@ -1,0 +1,357 @@
+/* autor: Cadena Herrera Samuel */
+
+:root {
+  --color-bg-sidebar: #142233;
+  --color-gold: #d5ac4d;
+  --color-gold-dark: #b8923a;
+  --color-gold-light: #cfc09b;
+  --color-bg-light: #e8ecee;
+  --color-white: #ffffff;
+  --color-text-dark: #1e293b;
+  --color-text-muted: #64748b;
+  --color-text-muted-1: #a8acb3;
+  --color-danger: #dc2626;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+/*  CONTENEDOR PRINCIPAL  */
+.main-container {
+  background-color: var(--color-bg-light);
+  border: 2px solid var(--color-gold);
+  border-radius: 18px;
+  padding: 25px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  color: var(--color-bg-sidebar);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/*  PERFIL  */
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.avatar-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--color-gold);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-gold);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatar-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-details h2 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--color-bg-sidebar);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.fa-venus {
+  color: #ff55f6;
+  font-size: 18px;
+}
+.fa-mars {
+  color: #38bdf8;
+  font-size: 18px;
+}
+.profile-details p {
+  margin: 5px 0 0 0;
+  color: var(--color-text-dark);
+  font-weight: 500;
+}
+.profile-stats {
+  display: flex;
+  gap: 20px;
+  padding-left: 20px;
+  color: var(--color-text-dark);
+  font-weight: 600;
+  font-size: 15px;
+}
+.profile-stats span {
+  padding-left: 15px;
+}
+.profile-actions {
+  display: flex;
+  gap: 20px;
+  padding-right: 15px;
+}
+.btn-gold {
+  background-color: var(--color-gold);
+  color: var(--color-bg-sidebar);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.btn-gold:hover {
+  background-color: var(--color-gold-light);
+}
+
+/*  TARJETAS */
+.card {
+  background: var(--color-white);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.card-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: var(--color-bg-sidebar);
+}
+.icon-edit-header {
+  color: var(--color-white);
+  font-size: 16px;
+  cursor: pointer;
+  background: var(--color-gold);
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/*  GRID SUPERIOR  */
+.grid-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/*  GRID INFERIOR  */
+.grid-bottom {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 20px;
+}
+
+/*  CALENDARIO  */
+.calendar-card-container {
+  height: 340px;
+}
+
+.calendar-wrapper {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f1f5f9;
+}
+.current-month {
+  font-weight: 700;
+  color: var(--color-bg-sidebar);
+  font-size: 16px;
+}
+.calendar-nav i {
+  color: var(--color-text-muted);
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.calendar-nav i:hover {
+  color: var(--color-gold);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  text-align: center;
+  flex-grow: 1;
+}
+.day-name {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  margin-bottom: 2px;
+}
+.day-number {
+  font-size: 13px;
+  width: 40px;
+  height: 40px;
+  padding: 0; /* clave */
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--color-text-dark);
+  transition: 0.2s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.day-number:hover {
+  background-color: var(--color-text-muted-1);
+}
+.day-active {
+  background-color: var(--color-bg-sidebar);
+  color: var(--color-white);
+  font-weight: 700;
+}
+.day-active:hover {
+  background-color: var(--color-bg-sidebar);
+}
+.has-event::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--color-gold);
+  border-radius: 50%;
+}
+
+/* TABLAS  */
+.simple-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.simple-table th {
+  text-align: left;
+  font-size: 13px;
+  color: var(--color-bg-sidebar);
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.simple-table td {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  vertical-align: top;
+  padding: 8px 0;
+  line-height: 1.4;
+  border-bottom: 1px solid #f8fafc;
+}
+.simple-table tr:last-child td {
+  border-bottom: none;
+}
+.text-strong {
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+.icon-trash {
+  color: var(--color-danger);
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.icon-trash:hover {
+  transform: scale(1.2);
+}
+
+/* Lista Citas */
+.citas-list {
+  overflow-y: auto;
+  max-height: 280px;
+}
+.cita-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+.cita-item:last-child {
+  border-bottom: none;
+}
+.cita-info h4 {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  color: var(--color-bg-sidebar);
+}
+.cita-info p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+.cita-actions {
+  display: flex;
+  gap: 15px;
+}
+.icon-edit {
+  color: var(--color-bg-sidebar);
+  cursor: pointer;
+}
+.modalBody {
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: transparent;
+  width: auto;
+  animation: fadeIn 0.25s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,252 @@
+/* autor: Cadena Herrera Samuel */
+
+:root {
+  --color-bg-sidebar: #142233;
+  --color-accent: #a3cfea;
+  --color-gold: #d5ac4d;
+  --color-bg-card: #ffffff;
+  --color-white: #ffffff;
+  --color-text-main: #333333;
+  --color-text-muted: #666666;
+  --color-bg-icons: #455261;
+  --color-btn-dark: #1e293b;
+  --color-bg-main: #eaecef;
+  --badge-green-bg: #d9f99d;
+  --badge-green-text: #20c062;
+  --badge-blue-bg: #bae6fd;
+  --badge-blue-text: #00a7e1;
+  --badge-red-bg: #fca5a5;
+  --badge-red-text: #e10004;
+  --input-bg: #e1e1e1;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: var(--color-bg-main);
+}
+
+.main-content {
+  padding: 8px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  background-color: var(--color-bg-main);
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/*  TOP BAR   */
+.top-bar {
+  background: var(--color-bg-card);
+  border-radius: 18px;
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.top-bar h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-bg-sidebar);
+}
+
+/* Search */
+.search-box {
+  background-color: var(--input-bg);
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+}
+
+.search-box i {
+  color: var(--color-bg-icons);
+  font-size: 18px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  color: var(--color-text-main);
+}
+
+/* Button */
+.btn-new {
+  background-color: var(--color-btn-dark);
+  color: var(--color-white);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-new:hover {
+  opacity: 0.9;
+}
+
+/* Cards */
+.card {
+  width: 100%;
+  background: var(--color-bg-card);
+  border-radius: 18px;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+.card-header h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-bg-sidebar);
+}
+
+.table-pets {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header Table */
+.table-pets thead th {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-bg-sidebar);
+  text-align: left;
+  padding: 10px 10px;
+  background-color: var(--color-bg-main);
+  border-bottom: 2px solid transparent;
+}
+
+.table-pets thead th:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.table-pets thead th:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/* Rows */
+.table-pets tbody tr {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.table-pets tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* Cells */
+.table-pets td {
+  padding: 7px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-bg-sidebar);
+  vertical-align: middle;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-muted {
+  color: var(--color-bg-sidebar);
+  font-weight: 400;
+  font-style: italic;
+  font-size: 12px;
+}
+
+/* Avatar */
+.mascota-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Badges  */
+.estado {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 90px;
+  border: 1.5px solid transparent;
+}
+
+/* Icon */
+.action-icon {
+  font-size: 16px;
+  color: var(--color-bg-sidebar);
+  cursor: pointer;
+}
+
+.btn-delete {
+  color: var(--badge-red-text);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-delete:hover,
+.action-icon:hover {
+  transform: scale(1.1);
+}
+.icons {
+  width: 55%;
+  height: auto;
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
+  }
+  .search-box {
+    width: 100%;
+  }
+}
+button {
+  all: unset;
+  cursor: pointer; /* Opcional: mantiene el puntero de mano */
+}
+.estado-ok {
+  background-color: #e5ff9c;
+  color: #20c062;
+}
+
+/* NARANJA */
+.estado-pendiente {
+  background-color: #b3edfb;
+  color: #00a7e1;
+}
+
+/* ROJO */
+.estado-error {
+  background-color: #ffb5b6;
+  color: #e10004;
+}
+
+
